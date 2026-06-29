@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Status Updated - ReformMe Healthcare</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8fafc; width: 100%;">
+        <tr>
+            <td align="center" style="padding: 40px 15px;">
+                <!-- Main Email Card -->
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); border: 1px solid #e2e8f0;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 35px 40px; text-align: center; border-bottom: 3px solid #f59e0b;">
+                            <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 800; letter-spacing: -0.5px;">ReformMe</h1>
+                            <p style="margin: 6px 0 0 0; color: #fcd34d; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px;">Schedule Update Notice</p>
+                        </td>
+                    </tr>
+
+                    <!-- Icon Banner -->
+                    <tr>
+                        <td align="center" style="padding: 35px 40px 10px;">
+                            <div style="width: 64px; height: 64px; background-color: #fef3c7; border-radius: 50%; line-height: 64px; text-align: center; font-size: 28px; color: #d97706;">
+                                ↻
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Content Body -->
+                    <tr>
+                        <td style="padding: 15px 40px 35px;">
+                            <h2 style="margin: 0 0 10px 0; color: #0f172a; font-size: 22px; font-weight: 700; text-align: center;">Appointment Updated</h2>
+                            <p style="margin: 0 0 24px 0; color: #64748b; font-size: 15px; text-align: center;">Hello <strong>{{patient_name}}</strong>, your consultation details or status have been updated.</p>
+                            
+                            <!-- Details Card -->
+                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8fafc; border-radius: 12px; border: 1px solid #cbd5e1; overflow: hidden; margin-bottom: 25px;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td style="padding-bottom: 14px; border-bottom: 1px solid #e2e8f0;">
+                                                    <p style="margin: 0; color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Current Status</p>
+                                                    <p style="margin: 4px 0 0 0; color: #d97706; font-size: 16px; font-weight: 800; text-transform: capitalize;">📌 {{status}}</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 14px 0; border-bottom: 1px solid #e2e8f0;">
+                                                    <p style="margin: 0; color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Date & Time</p>
+                                                    <p style="margin: 4px 0 0 0; color: #0f172a; font-size: 16px; font-weight: 700;">📅 {{appointment_date}} at {{appointment_time}}</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 14px 0; border-bottom: 1px solid #e2e8f0;">
+                                                    <p style="margin: 0; color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Doctor</p>
+                                                    <p style="margin: 4px 0 0 0; color: #0f172a; font-size: 16px; font-weight: 700;">🩺 Dr. {{doctor_name}}</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 14px;">
+                                                    <p style="margin: 0; color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Consultation Type</p>
+                                                    <p style="margin: 4px 0 0 0; color: #0f172a; font-size: 15px; font-weight: 600;">🏥 {{consultation_type}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="margin: 0 0 24px 0; color: #475569; font-size: 14px; line-height: 1.6; text-align: center;">
+                                If you have any questions regarding this change or need to pick a new time slot, please access your patient portal.
+                            </p>
+
+                            <!-- Action Button -->
+                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin: 20px 0 10px;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="{{dashboard_link}}" style="display: inline-block; background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); color: #ffffff; text-decoration: none; padding: 15px 36px; border-radius: 9999px; font-size: 15px; font-weight: 700; box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);">View Portal Dashboard</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #f8fafc; padding: 24px 40px; text-align: center; border-top: 1px solid #e2e8f0;">
+                            <p style="margin: 0 0 8px 0; color: #64748b; font-size: 12px; font-weight: 600;">Need help? Contact support@reformmehealthcare.me</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 11px;">&copy; 2024 ReformMe Healthcare. All rights reserved. Gurugram, India.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
